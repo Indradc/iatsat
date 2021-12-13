@@ -1,0 +1,37 @@
+<%- include('partials/default.ejs') -%>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <!-- End Header -->
+<%- include('partials/header') -%>
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+    <div class="materia well">
+    <h1 class="h2">Course Material</h1>
+  </div>
+      <div class="course container">
+        <h3>Click on each topic to access the material</h3>
+        <% found.forEach(function(item){ %>
+     <div class="material">
+         <a href="/upload/<%=item._id%>"><%=item.name%></a>
+         </div>
+    <%   }); %>
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+<%- include('partials/footer') -%>
+
+</body>
+
+</html>

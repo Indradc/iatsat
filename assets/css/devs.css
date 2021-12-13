@@ -1,0 +1,179 @@
+
+:root{
+  --col-acc: rgb(39, 92, 197);
+  --col-txt: #222;
+  --col-head: #111;
+  --color-txt-light : #eaeaea;
+  --col-acc-light: rgb(68, 121, 228);
+  --col-acc-form: rgba(56, 122, 255, 0.411);
+  --col-red : #e03a3c;
+
+
+  }
+section img{
+  padding:0 !important;
+}
+h1{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 48px !important;
+  /* background-color: green; */
+  color: black;
+  /* font-weight: bold; */
+}
+
+.profile-card-3 {
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  height:368px;
+  border:none;
+}
+.profile-card-3 .background-block {
+    float: left;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.profile-card-3 .background-block .background {
+  width:100%;
+  vertical-align: top;
+  opacity: 0.9;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+   /* -webkit-transform: scale(1.8);
+  transform: scale(2.8); */
+}
+.profile-card-3 .card-content-l {
+  width: 100%;
+  padding: 15px 25px;
+  color:#232323;
+  float:left;
+  background:#efefef;
+  height:50%;
+  border-radius:0 0 5px 5px;
+  position: relative;
+  z-index: 990;
+}
+.profile-card-3 .card-content-r {
+  width: 100%;
+  padding: 15px 25px;
+  color:#232323;
+  float:left;
+  background:#efefef;
+  height:50%;
+  border-radius:0 0 5px 5px;
+  position: relative;
+  z-index: 990;
+}
+.profile-card-3 .card-content-l::before {
+    content: '';
+    background: #efefef;
+    width: 120%;
+    height: 100%;
+    left: 11px;
+    bottom: 51px;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-13deg);
+}
+.profile-card-3 .card-content-r::before {
+  content: '';
+  background: #efefef;
+  width: 120%;
+  height: 100%;
+  left: -127px;
+  bottom: 51px;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(13deg);
+}
+.profile-card-3 .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  max-width: 150px;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 1);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  z-index:991;
+}
+.profile-card-3 h2 {
+  margin: 0 0 5px;
+  font-weight: 600;
+  font-size:25px;
+}
+.profile-card-3 h2 small {
+  display: block;
+  font-size: 15px;
+  margin-top:10px;
+}
+.profile-card-3 i {
+  display: inline-block;
+    font-size: 16px;
+    color: #232323;
+    text-align: center;
+    border: 1px solid #232323;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin:0 5px;
+}
+.profile-card-3 .icon-block{
+    float:left;
+    width:100%;
+    margin-top:15px;
+}
+.profile-card-3 .icon-block a{
+    text-decoration:none;
+}
+.profile-card-3 i:hover {
+  background-color:#232323;
+  color:#fff;
+  text-decoration:none;
+}
+
+.col-accent{
+  color: var(--col-acc) !important;
+}
+form input[type=password]{
+  background-color: var(--col-acc-form);
+  border: transparent solid 1px;
+}
+#devs #dev-box .forms {
+  min-height: 200px;
+}
+#devs .container #dev-row #dev-column #dev-box{
+  padding: 20px;
+}
+#dev-box{
+  border: rgb(182, 182, 182) solid 1px;
+}
+#dev-box button{
+  margin: auto;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 28px !important;
+  }
+  h1 {
+    font-size: 36px !important;
+  }
+  h3{
+    font-size: 24px !important;
+  }
+  p{
+    font-size: 14px !important;
+  }
+  a{
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,53 @@
+<%- include('partials/default.ejs') -%>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <%- include('partials/header.ejs') -%>
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div id="login">
+      <div class="container">
+          <div id="login-row" class="row justify-content-center align-items-center">
+              <div id="login-column" class="col-sm-8">
+                  <div id="login-box" class="col-sm-12">
+                      <form id="login-form" class="form" action="/test" method="post">
+                        <h3>These are Demo Olympiad for practice purpose</h3>
+                        <select name="testtype" id="select" class="w-1" style="border:transparent solid 1px;">
+                          <option value="selecttest">Select Test Type</option>
+                          <option value="3rd">Grade 3</option>
+                          <option value="4th">Grade 4</option>
+                          <option value="5th">Grade 5</option>
+                          <option value="6th">Grade 6</option>
+                          <option value="3rd2">Grade 3 test 2</option>
+                          <option value="4th2">Grade 4 test 2</option>
+                          <option value="5th2">Grade 5 test 2</option>
+                          <option value="6th2">Grade 6 test 2</option>
+                          <option value="demo">Demo Question</option>
+                        </select>
+                        <div class="button form-group my-3">
+                            <button type="submit" name="submit" class="btn btn-lg btn-primary" value="submit">Start Test</button>
+                        </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    </section><!-- End Breadcrumbs -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <%- include('partials/footer.ejs') -%>
+
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+:root{
+  --col-acc: rgb(39, 92, 197);
+    --col-txt: #222;
+    --col-head: #111;
+    --color-txt-light : #eaeaea;
+    --col-acc-light: rgb(68, 121, 228);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    color: #111;
+  }
+  
+.styled-bi li{
+  color: var(--col-acc);
+  font-size: 1.2em;
+}
+.styled-bi .bi{
+  padding-right: 15px;
+}
+
+.philanthropy{
+ background: url("../img/philan.jpg") center ;
+ background-size: cover;
+}
+
+  ul{
+    list-style: none;
+  }
+  ul li{
+    color: var(--col-txt);
+
+  }
+
+  .parent-a p ,h1,h2,h3{
+    position: relative;
+    z-index: 100;
+  }
+  /* .product-d {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    z-index: 0;
+    border-radius: 21px;
+    transform: rotate(30deg);
+  } */
+
+  section{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+#problems{
+  background-color: var(--col-acc);
+}
+
+#problems {
+  color: #fff;
+}
+.cursive-font{
+  font-family: "Cookie", sans-serif;
+}
+
+  .global-assesment .back-i{
+    background: url("../img/global-assesment.jpg") no-repeat center ;
+    width: 100%;
+    min-height: 500px;
+
+    position: relative;
+    height: auto;
+    background-size: cover ;
+    align-items: flex-end;
+    margin-bottom: 30px;
+  }
+
+  .global-assesment .back-i .banner{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-end;
+    color: white;
+    height: 100%;
+    position: absolute;
+    padding-left: 40px;
+    /* width: 50%; */
+    top: 0;
+    left: 0;
+  }
+  .global-assesment .back-i .banner h2{
+    color: #fff;
+    
+  }
+  .global-assesment .back-i .banner p{
+    color: var(--col-acc-light);
+    
+  }
+
+  .global-assesment .container .styled-li .bi{
+    color: var(--col-acc);
+    font-size: 1.2em;
+    padding: 0 20px;
+  }
+
+  .global-assesment .container .black-border{
+    border: black 20px solid;
+    background: var(--col-acc);
+    /* font-size: bold; */
+    letter-spacing: 1px;
+    line-height: 1.2em;
+    padding: 30px;
+    /* margin-bottom: 30px; */
+    color: #fff;
+  }
+.global-assesment .container .black-border p{
+  color: #fff;
+  font-weight: bold;
+}
+
+.endtoendexams p{
+  background: var(--col-acc);
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  color: #fff;
+}
+.eligibility {
+  /* background: var(--col-acc); */
+  background: linear-gradient(to right, rgb(39, 92, 197,.2), rgb(39, 92, 197,1)),
+              url("../img/eligi.jpg") no-repeat center ;
+  /* background:  */
+  border: 20px var(--col-acc) solid;
+}
+
+.eligibility ul{
+  padding-left: 50%;
+}
+
+@media (max-width : 768px)
+{
+  .eligibility ul{
+    padding-left: 0%;
+  }
+  .eligibility {
+    background: linear-gradient(to right, rgb(39, 92, 197,.7), rgb(39, 92, 197,.5)),
+                url("../img/eligi.jpg") no-repeat center  ;
+  }
+
+}
+
+.test-format p{
+  padding: 20px;
+  background: var(--col-acc);
+  border-radius: 30px
+}
+.lev {
+  padding:0 0 60px 0;
+}
+
+.lev .lev-list {
+  padding: 0;
+  list-style: none;
+}
+
+.lev .lev-list li {
+  border-bottom: 1px solid #f1eeef;
+  margin-bottom: 20px;
+  /* padding-bottom: 20px; */
+}
+
+.lev .lev-list .question {
+  display: block;
+  position: relative;
+  font-family: #e43c5c;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-left: 25px;
+  cursor: pointer;
+  color: var(--col-acc);
+  transition: 0.3s;
+}
+
+.lev .lev-list i {
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.lev .lev-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 25px;
+}
+
+.lev .lev-list .icon-show {
+  display: none;
+}
+
+.lev .lev-list .collapsed {
+  color: black;
+}
+
+.lev .lev-list .collapsed:hover {
+  color: var(--col-acc-light);
+}
+
+.lev .lev-list .collapsed .icon-show {
+  display: inline-block;
+  transition: 0.6s;
+}
+
+.lev .lev-list .collapsed .icon-close {
+  display: none;
+  transition: 0.6s;
+}
+
+  .flex-equal > * {
+    flex: 1;
+  }
+  @media (min-width: 992px) {
+    .flex-md-equal > * {
+      flex: 1;
+    }
+   
+  }
+@media (max-width:992px)
+{
+  .philanthropy p{
+    color: #fff;
+  }
+  .width-50{
+    width: 100% !important;
+  }
+}
+
+.fc-light{
+    color: #eaeaea !important;
+}  
+@media (max-width: 768px) {
+  h2 {
+    font-size: 28px !important;
+  }
+  h1 {
+    font-size: 36px !important;
+  }
+  h3{
+    font-size: 24px !important;
+  }
+  p{
+    font-size: 14px !important;
+  }
+  a{
+    font-size: 14px !important;
+  }
+}

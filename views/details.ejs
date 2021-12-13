@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/regist.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <%  found.forEach(function(item){ %>
+      <div class="receipt">
+      <form  action="/sendmail" method="post">
+      <table cellspacing=20>
+        <tr>
+          <td><h3>Registering For</h3></td>
+          <td><h4><%=item.registration%></h4></td>
+        </tr>
+        <tr>
+        <tr>
+          <td><h3>Name</h3></td>
+          <td><h4><%=item.name%></h4></td>
+        </tr>
+        <tr>
+          <td><h3>Address</h3></td>
+          <td><h4><%=item.address%></h4></td>
+        </tr>
+        <tr>
+          <td><h3>City</h3></td>
+          <td><h4><%=item.city%></h4></td>
+        </tr>
+        <tr>
+          <td><h3>State</h3></td>
+          <td><h4><%=item.state%></h4></td>
+        </tr>
+        <tr>
+          <td><h3>Country</h3></td>
+          <td><h4><%=item.country%></h4></td>
+        </tr>
+        <tr>
+          <td><h3>Pin Code</h3></td>
+          <td><h4><%=item.pin%></h4></td>
+        </tr>
+        <tr>
+          <td><h3>Phone Number</h3></td>
+          <td><h4><%=item.phone%></h4></td>
+        </tr>
+        <tr>
+          <td><h3>Email ID</h3></td>
+          <td><h4><%=item.email%></h4></td>
+        </tr>
+        <input type="hidden" name="email" value="<%=item.email%>">
+        <input type="hidden" name="date" value="<%=item.date%>">
+        <tr>
+          <td><h3>Gender</h3></td>
+          <td><h4><%=item.gender%></h4></td>
+        </tr>
+        <tr>
+          <td><h3>Class</h3></td>
+        <%  if(item.class==""){ %>
+            <td><h4>Annonymous</h4></td>
+        <% } else{ %>
+          <td><h4><%=item.class%></h4></td>
+      <%  }  %>
+        </tr>
+        <tr>
+          <td><h3>School</h3></td>
+        <%  if(item.school==""){ %>
+            <td><h4>Annonymous</h4></td>
+        <% } else{ %>
+          <td><h4><%=item.school%></h4></td>
+    <%    }  %>
+        </tr>
+        <tr>
+          <td><h3>Year</h3></td>
+        <%  if(item.year==""){ %>
+            <td><h4>Annonymous</h4></td>
+        <% } else{ %>
+          <td><h4><%=item.year%></h4></td>
+    <%    }  %>
+        </tr>
+        <tr>
+          <td><h3>College</h3></td>
+        <%  if(item.college==""){ %>
+            <td><h4>Annonymous</h4></td>
+        <% } else{ %>
+          <td><h4><%=item.college%></h4></td>
+      <%  }  %>
+        </tr>
+        <tr>
+          <td><h3>Student ID Proof</h3></td>
+          <td><h4><a href="/<%=item._id%>/image">Click here to view student ID Proof</a></h4></td>
+        </tr>
+        <tr>
+          <td><h3>Payment Receipt</h3></td>
+          <td><h4><a href="/image/<%=item._id%>">Click here to view payment receipt</a></h4></td>
+        </tr>
+      </table>
+      <div class="form-group button">
+                <button type="submit" class="btn btn-lg btn-info">Send Confirmation mail</button>
+                </div>
+      </form>
+    </div>
+    <%  });  %>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/regist.css">
+  </head>
+  <body class="subscriber">
+    <div class="subscribe">
+    <table>
+      <% found.forEach(function(item){ %>
+      <tr>
+        <td><h4><%=item.email%></h4></td>
+      </tr>
+  <%  });  %>
+    </table>
+    </div>
+  </body>
+</html>

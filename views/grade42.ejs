@@ -1,0 +1,1959 @@
+<%- include('partials/default.ejs') -%>
+
+    <link rel="stylesheet" href="css/quizdiff.css"/>
+  </head>
+  <body>
+
+    <div class="image1 quiz">
+      <form class="" action="/submitquizthirdtwo" method="post">
+        <div class="regist">
+      <h1 class="h1 pt-5">Grade 3 Quiz</h1>
+    </div>
+      <div class="container">
+        <div class="form-group pb-2">
+          <!-- <label>Full Name</label> -->
+          <input type="text"name="name" placeholder="Enter Full Name Here.." class="form-control" required="true">
+        </div>
+        <div class="row">
+          <div class="col-sm-6 form-group pb-2">
+          <!-- <label>Phone Number</label> -->
+          <input type="text"name="phone" placeholder="Enter Phone Number Here.." class="form-control"required="true">
+        </div>
+        <div class="col-sm-6 form-group pb-2">
+          <!-- <label>Email Address</label> -->
+          <input type="text"name="email" placeholder="Enter Email Address Here.." class="form-control"required="true">
+        </div>
+      </div>
+        </div>
+        <div class="container">
+          <%- include('partials/instruction.ejs') -%>
+    <h2 class="fs-2">Section A-English</h2>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+A. Types of nouns</h3>
+<h3 class="lead">1. The following sentence has some errors. Select the part/s of the
+sentence which has errors.</h3>
+<table class="col-accent">
+  <tr>
+    <td>Eric</td>
+    <td>could not</td>
+    <td>find the</td>
+    <td>gang of keys</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+  </tr>
+</table>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r1"class="male" value="a"><label class="male">1</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r1"class="male" value="b"><label class="male">2</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r1"class="male" value="c"><label class="male">3</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r1"class="male" value="d"><label class="male">4</label></div>
+</div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+2. Select that sentence which does not have a proper noun.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r2"class="male" value="a"><label class="male">It is Sam's birthday today.</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r2"class="male" value="b"><label class="male">The Eiffel Tower is very beautiful.</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r2"class="male" value="c"><label class="male">The rose is a very beautiful flower.</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r2"class="male" value="d"><label class="male">I live in Japan.</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+B. Types of Adjectives</h3>
+<h3 class="lead">3. We did not receive sufficient rain this year. Here sufficient is an….</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r3"class="male" value="a"><label class="male">adjective of quality</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r3"class="male" value="b"><label class="male">adjective of quantity</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r3"class="male" value="c"><label class="male">adjective of number</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="r3"class="male" value="d"><label class="male">demonstrative adjective</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+4. Match the noun with the correct adjective.
+</h3>
+<table class="col-accent">
+  <thead>
+  <tr>
+    <th>List I</th>
+    <th>List II</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>New</td>
+    <td>Boy</td>
+  </tr>
+  <tr>
+    <td>Clever</td>
+    <td>flower</td>
+  </tr>
+  <tr>
+    <td>Yellow</td>
+    <td>clothes</td>
+  </tr>
+  <tr>
+    <td>Old</td>
+    <td>soldiers</td>
+  </tr>
+  <tr>
+    <td>Indian</td>
+    <td>man</td>
+  </tr>
+  </tbody>
+</table>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r4"class="male" value="a"><label class="male"> A-1 B-2 C-3 D-4 E-5</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r4"class="male" value="b"><label class="male">A-4 B-2 C-1 D-3 E-5</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r4"class="male" value="c"><label class="male">A-2 B-1 C-4 D-5 E-3</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r4"class="male" value="d"><label class="male">A-3 B-1 C-2 D-5 E-4</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+C. Pronouns</h3>
+<h3 class="lead">5. Read the Sentences carefully and choose the correct option.
+</h3>
+<h3 class="lead">1. I know him will be there.</h3>
+<h3 class="lead">2. I know he will be there.</h3>
+<h3 class="lead">3. I think it will rain.</h3>
+<h3 class="lead">4. I think they will rain.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r5"class="male" value="a"><label class="male">TFTF</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r5"class="male" value="b"><label class="male">FTTF</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r5"class="male" value="c"><label class="male">TTFF</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r5"class="male" value="d"><label class="male">FFTT</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+6. There are two books with the same cover. Can you tell me which one is ____?
+</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r6"class="male" value="a"><label class="male">I</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r6"class="male" value="b"><label class="male">me</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r6"class="male" value="c"><label class="male">mine</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r6"class="male" value="d"><label class="male">my</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+D. Verbal Analogy</h3>
+<h3 class="lead">7. Merry: happy :: giggle :?</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="r7"class="male" value="a"><label class="male">Cackle</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r7"class="male" value="b"><label class="male">Eat</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r7"class="male" value="c"><label class="male">Yawn</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r7"class="male" value="d"><label class="male">sleep</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+8. United : together :: surprised : ?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r8"class="male" value="a"><label class="male">Frightened</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r8"class="male" value="b"><label class="male">amazed</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r8"class="male" value="c"><label class="male">cried</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r8"class="male" value="d"><label class="male">shouted</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">9. Quick : slow :: terrible : ?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r9"class="male" value="a"><label class="male">Horrible</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r9"class="male" value="b"><label class="male">awful</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r9"class="male" value="c"><label class="male">ugly</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r9"class="male" value="d"><label class="male">wonderful</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+E. Vocabulary</h3>
+<h3 class="lead">10. A book written by an unknown author.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r10"class="male" value="a"><label class="male">autobiography</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r10"class="male" value="b"><label class="male">anonymous</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r10"class="male" value="c"><label class="male">Anarchy</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r10"class="male" value="d"><label class="male">biography</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+11. A person who represents a country in a foreign country.
+</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r11"class="male" value="a"><label class="male">ambassador</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r11"class="male" value="b"><label class="male">bellicose</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r11"class="male" value="c"><label class="male">quadruped</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r11"class="male" value="d"><label class="male">spectator</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+12. Extreme or irrational fear of height.
+</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r12"class="male" value="a"><label class="male">Acrophobia</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r12"class="male" value="b"><label class="male">momentary</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r12"class="male" value="c"><label class="male">pacifist</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r12"class="male" value="d"><label class="male">audience</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+F. Verbs</h3>
+<h3 class="lead">13. Consider the statements, verbs in bold and type of verbs written at the end of
+each statement then choose the correct option</h3>
+  <h3 class="lead">Statement 1- They laughed quite loudly. - Action</h3>
+  <h3 class="lead">Statement 2 - Delhi is the capital of India. - Linking</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r13"class="male" value="a"><label class="male">TT</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r13"class="male" value="b"><label class="male">TF</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r13"class="male" value="c"><label class="male">FF</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r13"class="male" value="d"><label class="male">FT</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+14. Identify the helping verb in the following sentence.</h3>
+<h3 class="lead">They have started writing their science fair journals.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r14"class="male" value="a"><label class="male">started</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r14"class="male" value="b"><label class="male">have</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r14"class="male" value="c"><label class="male">writing</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r14"class="male" value="d"><label class="male">fair</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">15. Identify the action verb in the following sentence.</h3>
+<h3 class="lead">I am leaving tonight for the airport.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r15"class="male" value="a"><label class="male">am</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r15"class="male" value="b"><label class="male">leaving</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r15"class="male" value="c"><label class="male">tonight</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r15"class="male" value="d"><label class="male">for</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+16. Choose the correct form of the verb for the underlined word.</h3>
+<h3 class="lead">The gardener <u>mowed</u> the lawn yesterday.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r16"class="male" value="a"><label class="male">action</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r16"class="male" value="b"><label class="male">linking</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r16"class="male" value="c"><label class="male">helping</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r16"class="male" value="d"><label class="male">none</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+17. Choose the correct form of the verb for the underlined word.</h3>
+<h3 class="lead">Your room <u>smells</u> terrible, time for a clean up.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r17"class="male" value="a"><label class="male">action</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r17"class="male" value="b"><label class="male">linking</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r17"class="male" value="c"><label class="male">helping</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r17"class="male" value="d"><label class="male">none</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">G. Tenses</h3>
+<h3 class="lead">Choose the correct form of a verb to complete each sentence.</h3>
+<h3 class="lead">18. Lisa and Mike ____to the same school. (Simple Present Tense)</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r18"class="male" value="a"><label class="male">goes</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r18"class="male" value="b"><label class="male">go</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r18"class="male" value="c"><label class="male">went</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r19"class="male" value="d"><label class="male">does goes</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+  19. My brother ____his favourite TV programme every evening. (Simple Present
+  Tense)</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r19"class="male" value="a"><label class="male">watches</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r19"class="male" value="b"><label class="male">watch</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r19"class="male" value="c"><label class="male">watched</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r19"class="male" value="d"><label class="male">watching</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+  20. Those cakes _____(be) very good. I ____ (have) three yesterday. (Simple past
+  tense)</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r20"class="male" value="a"><label class="male">were , had</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r20"class="male" value="b"><label class="male">was, had</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r20"class="male" value="c"><label class="male">is, have</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r20"class="male" value="d"><label class="male">was, have</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+21. This mutt ___(carry) a bird to his master. (Simple Past Tense)</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r21"class="male" value="a"><label class="male">carryed</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r21"class="male" value="b"><label class="male">carried</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r21"class="male" value="c"><label class="male">carryied</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r21"class="male" value="d"><label class="male">carries</label></div></div>
+
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">22. Frank _______the fence tomorrow evening. (simple future tense)</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r22"class="male" value="a"><label class="male">will painted</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r22"class="male" value="b"><label class="male">will painting</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r22"class="male" value="c"><label class="male">will paint</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r22"class="male" value="d"><label class="male">will be paint</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+223. Choose the correct negative form of the following sentence.</h3>
+<h3 class="lead">Amanda orders a grilled chicken sandwich.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r23"class="male" value="a"><label class="male">Amanda does not order a grilled chicken sandwich.</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r23"class="male" value="b"><label class="male">Amanda do not order a grilled chicken sandwich.</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r23"class="male" value="c"><label class="male">Amanda does not orders a grilled chicken sandwich.</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r23"class="male" value="d"><label class="male">Amanda do not orders a grilled chicken sandwich.</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+  24. George got a magical hat three days ago. Choose the correct negative form of
+  the above sentence.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r24"class="male" value="a"><label class="male">George did not got a magical hat three days ago.</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r24"class="male" value="b"><label class="male">George did not gotted a magical hat three days ago.</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r24"class="male" value="c"><label class="male">George did not get a magical hat three days ago.</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r24"class="male" value="d"><label class="male">George does not got a magical hat three days ago.</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+25. Choose the correct interrogative form of the sentence.</h3>
+<h3 class="lead">Ann will clean the house tomorrow.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r25"class="male" value="a"><label class="male">Will Ann clean the house tomorrow?</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r25"class="male" value="b"><label class="male">Will Ann cleaned the house tomorrow?</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r25"class="male" value="c"><label class="male">Will Ann cleans the house tomorrow?</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r25"class="male" value="d"><label class="male">Will Ann be cleaning the house tomorrow?</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+H. Question and question tags.</h3>
+<h3 class="lead">Complete the sentences with the correct question tags.</h3>
+<h3 class="lead">26. I often come home late, ______?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r26"class="male" value="a"><label class="male">I do not</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r26"class="male" value="b"><label class="male">doesn’t I</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r26"class="male" value="c"><label class="male">I does not</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r26"class="male" value="d"><label class="male">don’t</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+  27. Our school arranges a trip every summer but the trip is very expensive,
+______?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r27"class="male" value="a"><label class="male">it is not</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r27"class="male" value="b"><label class="male">isn’t it</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r27"class="male" value="c"><label class="male">it is</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r27"class="male" value="d"><label class="male">it isn’t</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+Choose the correct option to fill in the blanks.</h3>
+<h3 class="lead">28. _______of these dresses do you like?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r28"class="male" value="a"><label class="male">What</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r28"class="male" value="b"><label class="male">Who</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r28"class="male" value="c"><label class="male">Which</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r28"class="male" value="d"><label class="male">How</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+29. _______will the winter vacation begin?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r29"class="male" value="a"><label class="male">When</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r29"class="male" value="b"><label class="male">Who</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r29"class="male" value="c"><label class="male">What</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r29"class="male" value="d"><label class="male">Whose</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+30. _______ is the leader of this team?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r30"class="male" value="a"><label class="male">Who</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r30"class="male" value="b"><label class="male">What</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r30"class="male" value="c"><label class="male">Whom</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="r30"class="male" value="d"><label class="male">Whose</label></div></div>
+
+
+                <h2 class="fs-2">Section B-Mathematics</h2>
+                <div class="row col-sm-12 p-3 border-bottom">
+                  <h3 class="lead">
+                    1. Which one of the following numbers is the least prime number?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb1"class="male" value="a"><label class="male">2</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb1"class="male" value="b"><label class="male">0</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb1"class="male" value="c"><label class="male">1</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb1"class="male" value="d"><label class="male">3</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+2. What is the place value of 9 in the numeral 498776?
+</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb2"class="male" value="a"><label class="male">9800</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb2"class="male" value="b"><label class="male">90000</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb2"class="male" value="c"><label class="male">980000</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb2"class="male" value="d"><label class="male">All of these</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+ 3. How many prime numbers are there between 1 and 20?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb3"class="male" value="a"><label class="male">8</label></div>
+ <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb3"class="male" value="b"><label class="male">7</label></div>
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb3"class="male" value="c"><label class="male">6</label></div>
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb3"class="male" value="d"><label class="male">9</label></div></div>
+ <div class="row col-sm-12 p-3 border-bottom">
+   <h3 class="lead">
+4. The digit at the place of hundred thousand in the number 456321 is:</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb4"class="male" value="a"><label class="male">5</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb4"class="male" value="b"><label class="male">6</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb4"class="male" value="c"><label class="male">4</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb4"class="male" value="d"><label class="male">3</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    5. Find the greatest & smallest number of 4- digits: 4, 3, 2, 0 by using each digit only
+    once.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb5"class="male" value="a"><label class="male">4320 and 0234</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb5"class="male" value="b"><label class="male">4302 and 2340</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb2"class="male" value="c"><label class="male">4320 and 2043</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb5"class="male" value="d"><label class="male">4320 and 2034</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    6. Which of the following sets of numbers is in the order from the lowest to the
+    highest?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb6"class="male" value="a"><label class="male">982, 985, 989, 789, 925, 1025</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb6"class="male" value="b"><label class="male">1920, 1902, 9102, 2109, 9201</label></div>
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb6"class="male" value="c"><label class="male">9876, 9768, 9678, 8976, 8796, 6879</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb6"class="male" value="d"><label class="male">1920, 9102, 9321, 9468, 9768</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    7. The greatest four digit even number that can be formed using 7, 0, 6, 5 without
+    repeating the digits is __.</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb7"class="male" value="a"><label class="male">6570</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb7"class="male" value="b"><label class="male">7560</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb7"class="male" value="c"><label class="male">7650</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb7"class="male" value="d"><label class="male">7065</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    8. Sonia is playing with some number cards. She made a deck of these cards and
+    pulled the cards as shown below. Her mother asked which is the largest possible 4
+    digit number that can be formed using all cards? Help her to find the answer.
+</h3>
+<h3 class="lead">5 6 8 2</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb8"class="male" value="a"><label class="male">8652</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb8"class="male" value="b"><label class="male">8562</label></div>
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb8"class="male" value="c"><label class="male">9652</label></div>
+ <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb8"class="male" value="d"><label class="male">9562</label></div></div>
+ <div class="row col-sm-12 p-3 border-bottom">
+   <h3 class="lead">
+     9. If hundreds place digit and unit's place digit are interchanged in each number, then
+     which of the following numbers is even?</h3>
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb9"class="male" value="a"><label class="male">2456</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb9"class="male" value="b"><label class="male">2820</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb9"class="male" value="c"><label class="male">7852</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb9"class="male" value="d"><label class="male">All of these</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+10. Find the number which will come in place of D in the given addition.
+</h3>
+<img src="grade3image2/image1.jpg" style="height:200px;width:200px" alt="">
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb10"class="male" value="a"><label class="male">4</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb10"class="male" value="b"><label class="male">6</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb10"class="male" value="c"><label class="male">8</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb10"class="male" value="d"><label class="male">5</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+11. Find the missing digit in the box, if the remainder is equal to 2.
+</h3>
+<img src="grade3image2/image2.jpg" style="height:200px;width:200px" alt="">
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb11"class="male" value="a"><label class="male">6</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb11"class="male" value="b"><label class="male">2</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb11"class="male" value="c"><label class="male">3</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb11"class="male" value="d"><label class="male">4</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    12. Ms Naina needs to order rulers for the 24 students in her class. Each student
+    needs one ruler. Rulers come in boxes of 8. Which of the following can be used to
+    find how many boxes of rulers Ms Naina needs?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb12"class="male" value="a"><label class="male">24+8</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb12"class="male" value="b"><label class="male">24−8</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb12"class="male" value="c"><label class="male">24×8</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb12"class="male" value="d"><label class="male">24÷8</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+13. Which number has 2 in the hundredths place and 6 in the tenths place?
+</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb13"class="male" value="a"><label class="male">0.261</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb13"class="male" value="b"><label class="male">2.06</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb13"class="male" value="c"><label class="male">6.12</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb13"class="male" value="d"><label class="male">0.621</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    14. Sara is carrying 1.45 kg of grapes and 1.23 kg of peaches in her bag. How
+    much weight is she carrying altogether?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb14"class="male" value="a"><label class="male">2.08 kg</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb14"class="male" value="b"><label class="male">3.68 kg</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb14"class="male" value="c"><label class="male">2.69 kg</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb14"class="male" value="d"><label class="male">2.68 kg</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    15. Maya was given 9.5 points for her presentation and Josh was given 6.5 points.
+    How many more points did Maya get?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb15"class="male" value="a"><label class="male">2.5</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb15"class="male" value="b"><label class="male">3</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb15"class="male" value="c"><label class="male">3.5</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb15"class="male" value="d"><label class="male">3.25</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+16. Write as a decimal : 5(1/4)</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb16"class="male" value="a"><label class="male">5.75</label></div>
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb16"class="male" value="b"><label class="male">5.25</label></div>
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb16"class="male" value="c"><label class="male">5.35</label></div>
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb16"class="male" value="d"><label class="male">525</label></div></div>
+ <div class="row col-sm-12 p-3 border-bottom">
+   <h3 class="lead">
+     17. 8 Students want to donate Rs. 124.80 to a poor man. What is the contribution
+    by each of them?</h3>
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb17"class="male" value="a"><label class="male">Rs. 15.60</label></div>
+ <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb17"class="male" value="b"><label class="male">Rs. 25.60</label></div>
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb17"class="male" value="c"><label class="male">Rs. 51.40</label></div>
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb17"class="male" value="d"><label class="male">Rs. 16.80</label></div></div>
+ <div class="row col-sm-12 p-3 border-bottom">
+   <h3 class="lead">
+18. Identify the unlike fractions from the following:</h3>
+ <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb18"class="male" value="a"><label class="male">6/8 and ⅝</label></div>
+ <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb18"class="male" value="b"><label class="male">5/9 and 4/9</label></div>
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb18"class="male" value="c"><label class="male">3/6 and 4/6</label></div>
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb18"class="male" value="d"><label class="male">⅗ and 9/10</label></div></div>
+ <div class="row col-sm-12 p-3 border-bottom">
+   <h3 class="lead">
+19. Find the missing numerator or denominator in each of the following questions.Here □ is _______.</h3>
+<img src="grade3image2/image3.jpg" style="height:200px;width:200px" alt="">
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb19"class="male" value="a"><label class="male">12</label></div>
+ <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb19"class="male" value="b"><label class="male">9</label></div>
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb19"class="male" value="c"><label class="male">15</label></div>
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb19"class="male" value="d"><label class="male">18</label></div></div>
+ <div class="row col-sm-12 p-3 border-bottom">
+   <h3 class="lead">
+20. What is the greatest length that is used to measure 8 m, 6 m and 14 m exactly?
+</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb20"class="male" value="a"><label class="male">4 m</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb20"class="male" value="b"><label class="male">3 m</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb20"class="male" value="c"><label class="male">6 m</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb20"class="male" value="d"><label class="male">2 m</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+21. Find the L.C.M. of 12, 16 and 24.
+</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb21"class="male" value="a"><label class="male">12</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb21"class="male" value="b"><label class="male">24</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb21"class="male" value="c"><label class="male">48</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb21"class="male" value="d"><label class="male">16</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+22. Sumona buys 3 toys For Rs.480. The cost of each toy is _________</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb22"class="male" value="a"><label class="male">Rs.140</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb22"class="male" value="b"><label class="male">Rs.160</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb22"class="male" value="c"><label class="male">Rs.180</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb22"class="male" value="d"><label class="male">Rs.150</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    23. Peter has Rs.19 more than what Tom has. If Peter has Rs.74,then find the
+    amount which Tom has?</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb23"class="male" value="a"><label class="male">Rs.65</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb23"class="male" value="b"><label class="male">Rs.55</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb23"class="male" value="c"><label class="male">Rs.45</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb23"class="male" value="d"><label class="male">Rs.58</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    24. Add the amount in each of the following questions.
+    Rs.65.85, Rs.170.34, Rs.57.28
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb24"class="male" value="a"><label class="male">Rs.295.85</label></div>
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb24"class="male" value="b"><label class="male">Rs.297.66</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb24"class="male" value="c"><label class="male">Rs.293.47</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb24"class="male" value="d"><label class="male">Rs.298.37</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    25. Ramya goes to a shop with Rs.50.00. She buys a pen for Rs.18.00 and an
+    eraser for Rs.5.00. How much money does she get back if she gives a Rs.50 note
+    to the shopkeeper?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb25"class="male" value="a"><label class="male">Rs.26.00</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb25"class="male" value="b"><label class="male">Rs.28.00</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb25"class="male" value="c"><label class="male">Rs.27.00</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb25"class="male" value="d"><label class="male">Rs.29.00</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    26. Rahul has 19 m 20 cm of cloth. If the length of 1 m 20 cm is required for a pant
+then how many pants can be made from the cloth?
+</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb26"class="male" value="a"><label class="male">18</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb26"class="male" value="b"><label class="male">15</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb26"class="male" value="c"><label class="male">16</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb26"class="male" value="d"><label class="male">19</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    27. What is the SI unit for the measurement of length?
+</h3>
+  <div class="form-group col-lg-3 ">
+ <input type="radio" name="rb27"class="male" value="a"><label class="male">Metre</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb27"class="male" value="b"><label class="male">Cubic metre </label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb27"class="male" value="c"><label class="male">Kilogram</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb27"class="male" value="d"><label class="male">Square metre</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    28. A man measured the length of 4 m 40 cm, 8 m 20 cm and 45m 10 cm. What is
+the sum of measured length?</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb28"class="male" value="a"><label class="male">50 m 80 cm</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb28"class="male" value="b"><label class="male">60 m 80 cm </label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb28"class="male" value="c"><label class="male">57 m 70 cm </label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rb28"class="male" value="d"><label class="male">45 m 85 cm</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+29. Convert 56 m in cm.
+</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb29"class="male" value="a"><label class="male">5100 cm</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb29"class="male" value="b"><label class="male">5600 cm</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb29"class="male" value="c"><label class="male">5400 cm</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb29"class="male" value="d"><label class="male">5200 cm</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    30. Pintu wants to measure the length of different things. Match the things given in
+List I with the measuring instrument given in List II to help Pintu find the length
+of the items.
+</h3>
+<table class="col-accent">
+  <thead>
+  <tr>
+    <th>List I</th>
+    <th>List II</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Length of kurta</td>
+    <td>Ruler</td>
+  </tr>
+  <tr>
+    <td>Length of a book</td>
+    <td>Foot</td>
+  </tr>
+  <tr>
+    <td>Length of a Dupatta</td>
+    <td>Measuring tape</td>
+  </tr>
+  <tr>
+    <td>Length of a carpet</td>
+    <td>Meter rod</td>
+  </tr>
+  </tbody>
+</table>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb30"class="male" value="a"><label class="male">A-3 B-2 C-1 D-4</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb30"class="male" value="b"><label class="male">A-4 B-1 C-3 D-2</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb30"class="male" value="c"><label class="male">A-2 B-4 C-3 D-1</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rb30"class="male" value="d"><label class="male">A-3 B-1 C-4 D-2</label></div></div>
+
+                <h2 class="fs-2">Section C-Science</h2>
+                <div class="row col-sm-12 p-3 border-bottom">
+                  <h3 class="lead">
+1. Which of the following is a characteristic of a non-living thing?
+</h3>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc1"class="male" value="a"><label class="male">Eats and Drinks Water</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc1"class="male" value="b"><label class="male">Does NOT Breath</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc1"class="male" value="c"><label class="male">Grows and Reproduces</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc1"class="male" value="d"><label class="male"> Dances around to their favorite song</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+2. Vertebrates that have fins to move and gills to breathe</h3>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc2"class="male" value="a"><label class="male">Fish</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc2"class="male" value="b"><label class="male">Amphibian</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc2"class="male" value="c"><label class="male">Platypus</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc2"class="male" value="d"><label class="male">Insects</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+3. A gas that all animals need to breathe and is found in air and water</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc3"class="male" value="a"><label class="male">Oxygen</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc3"class="male" value="b"><label class="male">Hydrogen</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc3"class="male" value="c"><label class="male">Nitrogen</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc3"class="male" value="d"><label class="male">Carbon- dioxide</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    4. Which animal is correctly grouped?</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc4"class="male" value="a"><label class="male">Spider and fish</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc4"class="male" value="b"><label class="male">Ladybird and shark</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc4"class="male" value="c"><label class="male">Frog and worm</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc4"class="male" value="d"><label class="male">Crocodile and snake.</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+5. The word terrestrial means-</h3>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc5"class="male" value="a"><label class="male">On land</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc5"class="male" value="b"><label class="male">In water</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc5"class="male" value="c"><label class="male">In sky</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc5"class="male" value="d"><label class="male">None of above</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+6. Which of these animal is an omnivore</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc6"class="male" value="a"><label class="male">Deer</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc6"class="male" value="b"><label class="male">Lion</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc6"class="male" value="c"><label class="male">Bear</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc6"class="male" value="d"><label class="male">Cow</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+7. Clothes do not protect us from</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc7"class="male" value="a"><label class="male">Heat</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc7"class="male" value="b"><label class="male">Dust</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc7"class="male" value="c"><label class="male">Blood pressure</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc7"class="male" value="d"><label class="male">Cold</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+8. Silk clothes are obtained from</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc8"class="male" value="a"><label class="male">Silk flies</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc8"class="male" value="b"><label class="male">Flax</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc8"class="male" value="c"><label class="male">Sheep</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc8"class="male" value="d"><label class="male">Silkworm</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+9. Silk and woollen clothes are often damaged by</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc9"class="male" value="a"><label class="male">Flies</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc9"class="male" value="b"><label class="male">Insects</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc9"class="male" value="c"><label class="male">Bacteria</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc9"class="male" value="d"><label class="male">Animal</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+10. To protect silk and woollen clothes, we should use-</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc10"class="male" value="a"><label class="male">Medicine</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc10"class="male" value="b"><label class="male">Salt Solution</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc10"class="male" value="c"><label class="male">Benzene</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc10"class="male" value="d"><label class="male">Naphthalene balls</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+11. In which activity do we use more water?
+</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc11"class="male" value="a"><label class="male">Drinking</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc11"class="male" value="b"><label class="male">Bathing</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc11"class="male" value="c"><label class="male">Washing clothes</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc11"class="male" value="d"><label class="male">Watering fields</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+12. Water on the earth can be found in the form of
+</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc12"class="male" value="a"><label class="male">Water vapour</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc12"class="male" value="b"><label class="male">Liquid water</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc12"class="male" value="c"><label class="male">Ice</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc12"class="male" value="d"><label class="male">All of above</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    13. Irrigation means</h3>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc13"class="male" value="a"><label class="male">Watering plants</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc13"class="male" value="b"><label class="male">Watering animals</label></div>
+ <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc13"class="male" value="c"><label class="male">Cooking food</label></div>
+ <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc13"class="male" value="d"><label class="male">Bathing</label></div></div>
+  <div class="row col-sm-12 p-3 border-bottom">
+    <h3 class="lead">
+  14. Which type of energy is produced when the handle of a pencil sharpener turns?
+</h3>
+     <div class="form-group col-lg-3 ">
+    <input type="radio" name="rc14"class="male" value="a"><label class="male">Light energy</label></div>
+     <div class="form-group col-lg-3 ">
+    <input type="radio" name="rc14"class="male" value="b"><label class="male">Electrical energy</label></div>
+     <div class="form-group col-lg-3 ">
+    <input type="radio" name="rc14"class="male" value="c"><label class="male">Magnetic energy</label></div>
+     <div class="form-group col-lg-3 ">
+    <input type="radio" name="rc14"class="male" value="d"><label class="male">mechanical energy</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+15. Heat is another name for-</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc15"class="male" value="a"><label class="male">thermal energy</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc15"class="male" value="b"><label class="male">magnetic energy</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc15"class="male" value="c"><label class="male">electrical energy</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc15"class="male" value="d"><label class="male">mechanical energy</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+16. What type of energy does an oven produce?</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc16"class="male" value="a"><label class="male">light</label></div>
+     <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc16"class="male" value="b"><label class="male">heat</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc16"class="male" value="c"><label class="male">light & heat</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc16"class="male" value="d"><label class="male">none of above</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+17. How is light energy different from sound energy?</h3>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc17"class="male" value="a"><label class="male">Light energy moves slower</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc17"class="male" value="b"><label class="male">Light energy is what you see and sound energy is what you hear.</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc17"class="male" value="c"><label class="male">Light energy uses vibrations and sound energy does not.</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc17"class="male" value="d"><label class="male">Light energy is in a cell phone and sound energy is not.</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    18. Tarzan is swinging through the jungle looking for Jane. He is constantly moving
+    back and forth..his kinetic energy is being changed to</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc18"class="male" value="a"><label class="male">electrical</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc18"class="male" value="b"><label class="male">chemical</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc18"class="male" value="c"><label class="male">potential</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc18"class="male" value="d"><label class="male">nuclear</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+19. Law of conservation of energy states that
+</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc19"class="male" value="a"><label class="male">energy cannot be created</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc19"class="male" value="b"><label class="male">energy cannot be destroyed</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc19"class="male" value="c"><label class="male">energy can neither be created nor be destroyed</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc19"class="male" value="d"><label class="male">none of above</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+20. The part of the plant that grows below the ground is called the
+</h3>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc19"class="male" value="a"><label class="male">root</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc19"class="male" value="b"><label class="male">stem</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc19"class="male" value="c"><label class="male">leaf</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc19"class="male" value="d"><label class="male">flower</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+21. Paper is obtained from</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc20"class="male" value="a"><label class="male">Rubber</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc20"class="male" value="b"><label class="male">Bamboo</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc20"class="male" value="c"><label class="male">rose</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc20"class="male" value="d"><label class="male">mint</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+22. ———- are weak plants that grow along the ground</h3>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc21"class="male" value="a"><label class="male">shrub</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc21"class="male" value="b"><label class="male">creeper</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc21"class="male" value="c"><label class="male">climber</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc21"class="male" value="d"><label class="male">herb</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+23. Cotton plant gives us</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc22"class="male" value="a"><label class="male">fibre</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc22"class="male" value="b"><label class="male">perfume</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc22"class="male" value="c"><label class="male">wood</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc22"class="male" value="d"><label class="male">rubber</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+24. House used by the people who keep moving from one place to another
+</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc23"class="male" value="a"><label class="male">house boat</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc23"class="male" value="b"><label class="male">caravan</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc23"class="male" value="c"><label class="male">stilt</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc23"class="male" value="d"><label class="male">pukka house</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+25. kutcha houses are made up of-</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc24"class="male" value="a"><label class="male">mud and thatch</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc24"class="male" value="b"><label class="male">brick</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc24"class="male" value="c"><label class="male">cement</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc24"class="male" value="d"><label class="male">none of above</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+26. Igloos are ______ from inside.</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc25"class="male" value="a"><label class="male">cold</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc25"class="male" value="b"><label class="male">warm</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc25"class="male" value="c"><label class="male">wet</label></div>
+ <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc25"class="male" value="d"><label class="male">none of above</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+27. A cocoon is called what in a butterflies life cycle?
+</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc26"class="male" value="a"><label class="male">Chrysalis</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc26"class="male" value="b"><label class="male">Egg</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc26"class="male" value="c"><label class="male">adult</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc26"class="male" value="d"><label class="male">metamorphosis</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+28. Which of the following stages in the life cycle of a mosquito is found in water</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc27"class="male" value="a"><label class="male">Egg ,larva and adult</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc27"class="male" value="b"><label class="male">Larva, pupa ,adult</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc27"class="male" value="c"><label class="male">Egg and larva</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc27"class="male" value="d"><label class="male">Egg, larva , pupa</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+29. Which of the following animals has a similar life cycle to the mosquito?</h3>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc28"class="male" value="a"><label class="male">Grasshopper</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc28"class="male" value="b"><label class="male">cockroach</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc28"class="male" value="c"><label class="male">Butterfly</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc28"class="male" value="d"><label class="male">chicken</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+30. How does a tadpole breathe?</h3>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc29"class="male" value="a"><label class="male">gills</label></div>
+  <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc29"class="male" value="b"><label class="male">lungs</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc29"class="male" value="c"><label class="male">mouth</label></div>
+   <div class="form-group col-lg-3 ">
+  <input type="radio" name="rc29"class="male" value="d"><label class="male">tail</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    <h2 class="fs-2">Section D-Reasoning</h2>
+    <div class="row col-sm-12 p-3 border-bottom">
+      <h3 class="lead">
+    1. Find the odd one out.</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd1"class="male" value="a"><label class="male"><img src="grade3image2/image4a.jpg" style="height:100px;width:100px" alt=""></label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd1"class="male" value="b"><label class="male"><img src="grade3image2/image4b.jpg" style="height:100px;width:100px" alt=""></label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd1"class="male" value="c"><label class="male"><img src="grade3image2/image4c.jpg" style="height:100px;width:100px" alt=""></label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd1"class="male" value="d"><label class="male"><img src="grade3image2/image4d.jpg" style="height:100px;width:100px" alt=""></label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+2. Find the odd one out.</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd2"class="male" value="a"><label class="male"><img src="grade3image2/image5a.jpg" style="height:100px;width:100px" alt=""></label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd2"class="male" value="b"><label class="male"><img src="grade3image2/image5b.jpg" style="height:100px;width:100px" alt=""></label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd2"class="male" value="c"><label class="male"><img src="grade3image2/image5c.jpg" style="height:100px;width:100px" alt=""></label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd2"class="male" value="d"><label class="male"><img src="grade3image2/image5d.jpg" style="height:100px;width:100px" alt=""></label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+3. Choose the figure which is similar to figure (X).
+</h3>
+<img src="grade3image2/image6.jpg" style="height:200px;width:200px" alt="">
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rd3"class="male" value="a"><label class="male"><img src="grade3image2/image9.jpg" style="height:100px;width:100px" alt=""></label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="rd3"class="male" value="b"><label class="male"><img src="grade3image2/image10.jpg" style="height:100px;width:100px" alt=""></label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd3"class="male" value="c"><label class="male"><img src="grade3image2/image11.jpg" style="height:100px;width:100px" alt=""></label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd3"class="male" value="d"><label class="male"><img src="grade3image2/image12.jpg" style="height:100px;width:100px" alt=""></label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+4. Direction: Find the odd one out.</h3>
+<div class="form-group col-lg-3 ">
+               <input type="radio" name="rd4"class="male" value="a"><label class="male"><img src="grade3image2/image15a.jpg" style="height:100px;width:100px" alt=""></label>
+               </div>
+<div class="form-group col-lg-3 ">
+  <input type="radio" name="rd4"class="male" value="b"><label class="male"><img src="grade3image2/image15b.jpg" style="height:100px;width:100px" alt=""></label>
+  </div>
+  <div class="form-group col-lg-3 ">
+                    <input type="radio" name="rd4"class="male" value="c"><label class="male"><img src="grade3image2/image15c.jpg" style="height:100px;width:100px" alt=""></label>
+                    </div>
+                    <div class="form-group col-lg-3 ">
+                                      <input type="radio" name="rd4"class="male" value="d"><label class="male"><img src="grade3image2/image15d.jpg" style="height:100px;width:100px" alt=""></label>
+                                      </div>
+                                      </div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+5. Direction: Find the odd one out.</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd5"class="male" value="a"><label class="male"><img src="grade3image2/image17a.jpg" style="height:100px;width:100px" alt=""></label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd5"class="male" value="b"><label class="male"><img src="grade3image2/image17b.jpg" style="height:100px;width:100px" alt=""></label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd5"class="male" value="c"><label class="male"><img src="grade3image2/image17c.jpg" style="height:100px;width:100px" alt=""></label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd5"class="male" value="d"><label class="male"><img src="grade3image2/image17d.jpg" style="height:100px;width:100px" alt=""></label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+6. How many toffees will be there in Pattern 5?</h3>
+<img style="height:100px;"src="grade3image2/image18.jpg" alt="">
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd6"class="male" value="a"><label class="male">17</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd6"class="male" value="b"><label class="male">10</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd6"class="male" value="c"><label class="male">12</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd6"class="male" value="d"><label class="male">15</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+7. What are the next two numbers in the pattern below? 6, 8, 12, 18, __________</h3>
+<div class="form-group col-lg-3 ">
+         <input type="radio" name="rd7"class="male" value="a"><label class="male">28, 30</label>
+         </div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd7"class="male" value="b"><label class="male">26, 36</label>
+</div>
+<div class="form-group col-lg-3 ">
+              <input type="radio" name="rd7"class="male" value="c"><label class="male">20, 30</label>
+              </div>
+              <div class="form-group col-lg-3 ">
+                                 <input type="radio" name="rd7"class="male" value="d"><label class="male">28, 38</label>
+                                 </div>
+</div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+8. </h3>
+<img style="height:100px;"src="grade3image2/image7.jpg" alt="">
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd8"class="male" value="a"><label class="male">14, 18</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd8"class="male" value="b"><label class="male">4, 14</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd8"class="male" value="c"><label class="male">20, 18</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd8"class="male" value="d"><label class="male">16, 14</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+9. Identify the rule followed in the given number pattern.</h3>
+<img style="height:100px;"src="grade3image2/image8.png" alt="">
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd9"class="male" value="a"><label class="male">Add 2 in the previous term to get the next term.</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd9"class="male" value="b"><label class="male">Subtract 2, 4 _ _ _ _ sequentially.</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd9"class="male" value="c"><label class="male">Multiply the number by itself to get the next term.</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd9"class="male" value="d"><label class="male">Multiply previous terms by 2 to get the next term.</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+10. Find which of the following does not follow a pattern.</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd10"class="male" value="a"><label class="male">20+2=22</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd10"class="male" value="b"><label class="male">22+2=24</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd10"class="male" value="c"><label class="male">24+2=26</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd10"class="male" value="d"><label class="male">26-2=24</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+11. Which letter appears in RESIDENT, but not in REINVEST?</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd11"class="male" value="a"><label class="male">D</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd11"class="male" value="b"><label class="male">V</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd11"class="male" value="c"><label class="male">I</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd11"class="male" value="d"><label class="male">S</label></div></div>
+
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+12. Find the meaningful combination of numbers so that letters are arranged
+accordingly to form a meaningful word.
+</h3>
+<table class="col-accent">
+  <tr>
+    <td>A</td>
+    <td>H</td>
+    <td>T</td>
+    <td>S</td>
+    <td>M</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+  </tr>
+</table>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd12"class="male" value="a"><label class="male">5,3,1,2,4</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd12"class="male" value="b"><label class="male">5,1,3,2,4</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd12"class="male" value="c"><label class="male">5,3,1,4,2</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd12"class="male" value="d"><label class="male">5,1,3,4,2</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+13. Find the word that CANNOT be made from the letters of the given word.
+CARPENTER</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd13"class="male" value="a"><label class="male">NECTAR</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd13"class="male" value="b"><label class="male">CARPET</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd13"class="male" value="c"><label class="male">PAINTER</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd13"class="male" value="d"><label class="male">REPENT</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+14. Form the word using given letters and find the category in which they belong.
+N O D M Y A
+</h3>
+<div class="form-group col-lg-3 ">
+   <input type="radio" name="rd14"class="male" value="a"><label class="male">Name of month</label>
+   </div>
+<div class="form-group col-lg-3 ">
+   <input type="radio" name="rd14"class="male" value="b"><label class="male">Name of day</label>
+   </div>
+<div class="form-group col-lg-3 ">
+   <input type="radio" name="rd14"class="male" value="c"><label class="male">Measuring unit</label>
+   </div>
+<div class="form-group col-lg-3 ">
+   <input type="radio" name="rd14"class="male" value="d"><label class="male">Name of flower</label>
+   </div>
+</div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+15. Which of the following words CANNOT be formed from the letters of the given
+word? INTRODUCTION</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd15"class="male" value="a"><label class="male">ROUND</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd15"class="male" value="b"><label class="male">IDIOT</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd15"class="male" value="c"><label class="male">DRAIN</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd15"class="male" value="d"><label class="male">COURT</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+16. If cake is called “egg”, if egg is called “coffee”, coffee is called “tea”, then which
+is white in colour?</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd16"class="male" value="a"><label class="male">Cake</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd16"class="male" value="b"><label class="male">Egg</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd16"class="male" value="c"><label class="male">Coffee</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd16"class="male" value="d"><label class="male">Tea</label></div></div>
+
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+  17. If January is called “March”, March is called “April” and April is called “May”,
+  then which of the following months will have only 30 days?</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd17"class="male" value="a"><label class="male">January</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd17"class="male" value="b"><label class="male">March</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd17"class="male" value="c"><label class="male">April</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd17"class="male" value="d"><label class="male">May</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+  18. If white is called blue, blue is called red, red is called yellow, yellow is called
+  green, what would be the colour of human blood?</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd18"class="male" value="a"><label class="male">Red</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd18"class="male" value="b"><label class="male">Green</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd18"class="male" value="c"><label class="male">Yellow</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd18"class="male" value="d"><label class="male">Violet</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+  19. If pen is called butter, butter is called soap, soap is called ink, ink is called
+  honey, which of the following is used for washing clothes?
+</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd19"class="male" value="a"><label class="male">Honey</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd19"class="male" value="b"><label class="male">Butter</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd19"class="male" value="c"><label class="male">Red</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd19"class="male" value="d"><label class="male">Ink</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+20. If 'RAJU' is coded as 4 - 3 - 2 - 6 and 'JUNK' is coded as 1 - 6 - 5 - 8, then how
+will you code 'RANK'?</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd20"class="male" value="a"><label class="male">4 - 6 - 5 - 8</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd20"class="male" value="b"><label class="male">4 - 3 - 6 - 8</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd20"class="male" value="c"><label class="male">4 - 3 - 5 - 8</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd20"class="male" value="d"><label class="male">1 - 6 - 5 - 8</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+21. Observe the given alphabets carefully and answer the questions based on it.</h3>
+<h3 class="lead">If all the vowels are removed from the above alphabetical series, then _______
+comes just before p.</h3>
+<table class="col-accent">
+  <tr>
+    <td>A</td>
+    <td>B</td>
+    <td>C</td>
+    <td>D</td>
+    <td>E</td>
+    <td>F</td>
+    <td>G</td>
+    <td>H</td>
+    <td>I</td>
+    <td>J</td>
+    <td>K</td>
+    <td>L</td>
+    <td>M</td>
+  </tr>
+  <tr>
+    <td>N</td>
+    <td>O</td>
+    <td>P</td>
+    <td>Q</td>
+    <td>R</td>
+    <td>S</td>
+    <td>T</td>
+    <td>U</td>
+    <td>V</td>
+    <td>W</td>
+    <td>X</td>
+    <td>Y</td>
+    <td>Z</td>
+  </tr>
+</table>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd21"class="male" value="a"><label class="male">N</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd21"class="male" value="b"><label class="male">Q</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd21"class="male" value="c"><label class="male">M</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd21"class="male" value="d"><label class="male">H</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+22. Priya is taller than Sneha but shorter than parul. Sakshi is the shortest. Who
+among the following is the tallest?</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd22"class="male" value="a"><label class="male">Priya</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd22"class="male" value="b"><label class="male">Sakshi</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd22"class="male" value="c"><label class="male">Parul</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd22"class="male" value="d"><label class="male">Sneha</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+23. If dog and table are removed from the given arrangement, then _______ is third
+to the left of the book.</h3>
+<img style="height:100px;"src="grade3image2/image19.jpg" alt="">
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd23"class="male" value="a"><label class="male">Chair</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd23"class="male" value="b"><label class="male">Clock</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd23"class="male" value="c"><label class="male">Pen</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd23"class="male" value="d"><label class="male">Lamp</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+24. Find the number of fruits to the right of the fruit called as king of fruits?.
+</h3>
+<img style="height:100px;"src="grade3image2/image20.jpg" alt="">
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd24"class="male" value="a"><label class="male">2</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd24"class="male" value="b"><label class="male">3</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd24"class="male" value="c"><label class="male">1</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd24"class="male" value="d"><label class="male">4</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+25. Four friends took part in a race.</h3>
+<h3 class="lead">Mini: I was faster than Sidak.</h3>
+<h3 class="lead">Sidak: I was neither at the second place nor at the last place.</h3>
+<h3 class="lead">Mohit: I was first.</h3>
+   <h3 class="lead">Sanchi: I was slower than Sidak.</h3>
+   <h3 class="lead">Who stood second in the race?</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd25"class="male" value="a"><label class="male">Mini</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd25"class="male" value="b"><label class="male">Sidak</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd25"class="male" value="c"><label class="male">Mohit</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd25"class="male" value="d"><label class="male">Sanchi</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+26. Kavleen, Trishika and Sidak are standing in a line.</h3>
+<h3 class="lead">Sidak is not the last.</h3>
+<h3 class="lead">Kavleen is standing before sidak.</h3>
+<h3 class="lead">Trishika is not standing between Sidak and kavleen.</h3>
+<h3 class="lead">Which girl is standing at the first place in the line?</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd26"class="male" value="a"><label class="male">Sidak</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd26"class="male" value="b"><label class="male">Kavleen</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd26"class="male" value="c"><label class="male">Trishika</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd26"class="male" value="d"><label class="male">Can’t be determined</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+27. If apples and D are removed from the given arrangement, then apple A will
+be______ from the right end.
+</h3>
+<img style="height:100px;"src="grade3image2/image8.jpg" alt="">
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd27"class="male" value="a"><label class="male">Fourth</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd27"class="male" value="b"><label class="male">Third</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd27"class="male" value="c"><label class="male">Fifth</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd27"class="male" value="d"><label class="male">Second</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+28. If two balls P and Q are removed from the given series and placed at the right
+end, then which ball will be 4th from the right end?</h3>
+<img style="height:100px;"src="grade3image2/image21.jpg" alt="">
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd28"class="male" value="a"><label class="male">X</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd28"class="male" value="b"><label class="male">W</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd28"class="male" value="c"><label class="male">Y</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd28"class="male" value="d"><label class="male">V</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+29. If burger and chocolate are removed from the given arrangement, then which of
+the following will be second to the left of the third item from the right end?</h3>
+<img style="height:100px;"src="grade3image2/image22.jpg" alt="">
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd29"class="male" value="a"><label class="male"><img src="grade3image2/image23.jpg" style="height:100px;width:100px" alt=""></label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd29"class="male" value="b"><label class="male"><img src="grade3image2/image24.jpg" style="height:100px;width:100px" alt=""></label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd29"class="male" value="c"><label class="male"><img src="grade3image2/image25.jpg" style="height:100px;width:100px" alt=""></label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd29"class="male" value="d"><label class="male"><img src="grade3image2/image26.jpg" style="height:100px;width:100px" alt=""></label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+<h3 class="lead">
+30. If Minions X and T are removed, then Minio ________ is fifth to the left of
+Minion Q
+</h3>
+<img style="height:100px;"src="grade3image2/image27.jpg" alt="">
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd30"class="male" value="a"><label class="male">X</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd30"class="male" value="b"><label class="male">Y</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd30"class="male" value="c"><label class="male">M</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="rd30"class="male" value="d"><label class="male">R</label></div></div>
+                <h2 class="fs-2">Section E-General Knowledge</h2>
+                <div class="row col-sm-12 p-3 border-bottom">
+                  <h3 class="lead">
+              1. Name the author who created the famous series of books – “Harry Potter”.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re1"class="male" value="a"><label class="male">William Shakespeare</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re1"class="male" value="b"><label class="male">Charles Dickens</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re1"class="male" value="c"><label class="male">J.K. Rowling</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re1"class="male" value="d"><label class="male">Rudyard Kipling</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+2. The famous children’s book – “Jungle Book” was written by.
+</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re2"class="male" value="a"><label class="male">Enid Blyton</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re2"class="male" value="b"><label class="male">Dr. Seuss</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re2"class="male" value="c"><label class="male">Rita Williams-Garcia</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re2"class="male" value="d"><label class="male">Rudyard Kipling</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+3. Who wrote the book “The Chronicles of Narnia”?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re3"class="male" value="a"><label class="male"> C. S. Lewis</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re3"class="male" value="b"><label class="male">J.K. Rowling</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re3"class="male" value="c"><label class="male">Lewis Carroll</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re3"class="male" value="d"><label class="male">Charles Dickens</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+4. ____ is the author of the popular pickwickers paper series for children.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re4"class="male" value="a"><label class="male">J.K. Rowling</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re4"class="male" value="b"><label class="male">Enid Blyton</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re4"class="male" value="c"><label class="male">William Shakespeare</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re4"class="male" value="d"><label class="male">Charles dickens</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    5. Name the author of the world famous children’s fiction, “Alice’s Adventures in
+    Wonderland”.
+</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re5"class="male" value="a"><label class="male">Lewis Carroll</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re5"class="male" value="b"><label class="male">T. S. Eliot</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re5"class="male" value="c"><label class="male">Rita Williams-Garcia</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re5"class="male" value="d"><label class="male">Roald Dahl</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+6. Winnie-the-Pooh was written by _______________________.</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re6"class="male" value="a"><label class="male">Rudyard Kipling</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re6"class="male" value="b"><label class="male">Maurice Sendak</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re6"class="male" value="c"><label class="male">T. S. Eliot</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re6"class="male" value="d"><label class="male">A. A. Milne</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+7. Charles Dickens wrote a very popular English novel for children. Name the book.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re7"class="male" value="a"><label class="male">Jumanji</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re7"class="male" value="b"><label class="male">David Copperfield</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re7"class="male" value="c"><label class="male">One Crazy Summer</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re7"class="male" value="d"><label class="male">The Big Book of Berenstain Bear</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    8. The ever-famous children’s book “Charlie and the Chocolate Factory” was written
+    by this famous author. Name the author.
+</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re8"class="male" value="a"><label class="male">Roald Dahl</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re8"class="male" value="b"><label class="male">J.K. Rowling</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re8"class="male" value="c"><label class="male">Maurice Sendak</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re8"class="male" value="d"><label class="male">William Shakespeare</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    9. “The Very Hungry Caterpillar” was written by this world famous author. Name the
+    author.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re9"class="male" value="a"><label class="male">C. S. Lewis</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re9"class="male" value="b"><label class="male">Roald Dahl</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re9"class="male" value="c"><label class="male">Eric Carle</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re9"class="male" value="d"><label class="male">Dickens</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+    10.“The Cat in the Hat” is one of the greatest children’s books written by
+    _____________________.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re10"class="male" value="a"><label class="male">A. A. Milne</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re10"class="male" value="b"><label class="male">Dr. Seuss</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re10"class="male" value="c"><label class="male">T. S. Eliot</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re10"class="male" value="d"><label class="male">Maurice Sendak</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+11. Who is the inventor of the Telephone?</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re11"class="male" value="a"><label class="male">Francis Beaufort</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re11"class="male" value="b"><label class="male">Henry Moseley</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re11"class="male" value="c"><label class="male">Alexander Graham Bell</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re11"class="male" value="d"><label class="male">Anthony Blatner</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+12.Who invented the Light Bulb?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re12"class="male" value="a"><label class="male">Thomas Edison</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re12"class="male" value="b"><label class="male">Eli Whitney</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re12"class="male" value="c"><label class="male">Benjamin Franklin</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re12"class="male" value="d"><label class="male">Francis Beaufort</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+13. The Steam engine was invented by ____________________.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re13"class="male" value="a"><label class="male">Benjamin Franklin</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re13"class="male" value="b"><label class="male">Thomas Savery</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re13"class="male" value="c"><label class="male">Henry Ford</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re13"class="male" value="d"><label class="male">John Logie Baird</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+14. Who invented the calculator?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re14"class="male" value="a"><label class="male">The Wright brothers (Orville and Wilbur Wright)</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re14"class="male" value="b"><label class="male">James Watt</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re14"class="male" value="c"><label class="male">Blaise pasca</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re14"class="male" value="d"><label class="male">Galileo Galilei</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+15. Who was the inventor of the car?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re15"class="male" value="a"><label class="male">Karl Benz</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re15"class="male" value="b"><label class="male">Henry Mosele</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re15"class="male" value="c"><label class="male">Ralph Baer</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re15"class="male" value="d"><label class="male">Eli Whitney</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+16. Who is the inventor of the Computer?
+</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re16"class="male" value="a"><label class="male">Charles Babbage</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re16"class="male" value="b"><label class="male">Roger Bacon</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re16"class="male" value="c"><label class="male">Joseph Aspdin</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re16"class="male" value="d"><label class="male">ada lovelace</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+17.Who, along with Charles Babbage, wrote the first computer program</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re17"class="male" value="a"><label class="male">Ada lovelace</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re17"class="male" value="b"><label class="male">Karl Benz</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re17"class="male" value="c"><label class="male">Alexander Bereznyak</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re17"class="male" value="d"><label class="male">Tim Berners-Lee</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+18. _________________________ invented the mobile phone.</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re18"class="male" value="a"><label class="male">Martin Cooper</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re18"class="male" value="b"><label class="male">Roger Bacon</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re18"class="male" value="c"><label class="male">Anthony Blatner</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re18"class="male" value="d"><label class="male">Thomas Edison</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+19. Who invented the ceiling fan?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re19"class="male" value="a"><label class="male">Alexander Bereznyak</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re19"class="male" value="b"><label class="male">Philip Dieh</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re19"class="male" value="c"><label class="male">Char</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re19"class="male" value="d"><label class="male">Rudolf Diesel</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+20. Who was the inventor of dynamite ?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re20"class="male" value="a"><label class="male">Heinrich Hertz</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re20"class="male" value="b"><label class="male">Rowland Hill</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re20"class="male" value="c"><label class="male">Quam Hollista</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re20"class="male" value="d"><label class="male">Alfred nobel</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+21.Who gives the Nobel prize?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re21"class="male" value="a"><label class="male">King of sweden</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re21"class="male" value="b"><label class="male">resident of USA</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re21"class="male" value="c"><label class="male">Prime minister of India</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re21"class="male" value="d"><label class="male">Queen of britain</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+22. Who was the first person in space?
+</h3>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re22"class="male" value="a"><label class="male">Yuri Gagarin</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re22"class="male" value="b"><label class="male">Neil armstrong</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re22"class="male" value="c"><label class="male">Rakesh sharma</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re22"class="male" value="d"><label class="male">None of the above</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+23.Who was the first woman in space?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re23"class="male" value="a"><label class="male">Yuri Gagarin</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re23"class="male" value="b"><label class="male">Valentina Tereshkova</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re23"class="male" value="c"><label class="male">Rakesh sharma</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re23"class="male" value="d"><label class="male">Nove of the above</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+24.Who was the first country in space?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re24"class="male" value="a"><label class="male">Russia</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re24"class="male" value="b"><label class="male">USA</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re24"class="male" value="c"><label class="male">UK</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re24"class="male" value="d"><label class="male">USSR</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+25.Who was the first country on the Moon ?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re25"class="male" value="a"><label class="male">Russia</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re25"class="male" value="b"><label class="male">USA</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re25"class="male" value="c"><label class="male">UK</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re25"class="male" value="d"><label class="male">USSR</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+26.Which planet is earth sister</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re26"class="male" value="a"><label class="male">Venus</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re26"class="male" value="b"><label class="male">Earth</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re26"class="male" value="c"><label class="male">Mercury</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re26"class="male" value="d"><label class="male">Mars</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+27.Which planet is jovian planet</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re27"class="male" value="a"><label class="male">Venus</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re27"class="male" value="b"><label class="male">Jupiter</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re27"class="male" value="c"><label class="male">Mercury</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re27"class="male" value="d"><label class="male">Mars</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+28. Which planet is nearest to the sun?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re28"class="male" value="a"><label class="male">Venus</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re28"class="male" value="b"><label class="male">Jupiter</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re28"class="male" value="c"><label class="male">Mercury</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re28"class="male" value="d"><label class="male">Mars</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+29.Where is Asteroid belt?</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re29"class="male" value="a"><label class="male">Venus and Earth</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re29"class="male" value="b"><label class="male">Jupiter and saturn</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re29"class="male" value="c"><label class="male">Mercury and venus</label></div>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re29"class="male" value="d"><label class="male">Mars and jupiter</label></div></div>
+<div class="row col-sm-12 p-3 border-bottom">
+  <h3 class="lead">
+30.What is creation of black hole known as</h3>
+ <div class="form-group col-lg-3 ">
+<input type="radio" name="re30"class="male" value="a"><label class="male">Planet</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re30"class="male" value="b"><label class="male">Supernova</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re30"class="male" value="c"><label class="male">Comet</label></div>
+<div class="form-group col-lg-3 ">
+<input type="radio" name="re30"class="male" value="d"><label class="male">Galaxy</label></div></div>
+</div>
+<div class="form-group col-lg-12 align-items-center d-flex justify-content-center mt-5 mb-5">
+  <button type="submit"class="btn btn-lg btn-info " name="button">Submit</button>
+</div>
+              </form>
+            </div>
+  </body>
+</html>

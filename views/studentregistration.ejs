@@ -1,0 +1,224 @@
+<%- include('partials/default.ejs') -%>
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <%- include('partials/header.ejs') -%>
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+        <div class="well regist">
+    <h1 class=" display-5">Student Registration Form</h1>
+  </div>
+  <div class="container">
+	<div class="col-lg-12 well">
+    <div class="row">
+      <div class="row">
+        <div class="button form-group">
+          <button type="button" class="btn btn-large btn-dark mb-3" name="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Check Bank Details</button>
+        </div>
+      </div>
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="staticBackdropLabel">Bank Details</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div><b class="h6">Bank Name: </b> ICICI Bank</div>
+                                      <div><b class="h6">Account Name: </b> ONE ALPHABET EDUCATIONAL FOUNDATION</div>
+                                      <div><b class="h6">ACCOUNT NUMBER: </b>016405008465</div>
+                                      <div><b class="h6">IFSC CODE: </b> ICIC0000164</div>
+                                      <hr>
+                                      <div><b class="h6">NOTE: </b>Make the payment to respective bank and upload the payment reciept</b></div>
+                                    <div><b class="h6">Paytm Number: </b>7838397713</div>
+                                    <div><b class="h6">NOTE: </b>Payment can be done through paytm also.After payment,take the screenshot and upload it as payment receipt</b></div>
+                                   </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+	<div class="row">
+				<form action="/add" method="POST" enctype="multipart/form-data">
+					<div class="col-sm-12">
+            <div class="row pb-3">
+            <!-- <div class="form-group col-sm-4"> -->
+
+
+
+              <div class="form-check col-lg-4 l-i pb-2">
+                <input class="form-check-input ml-2" type="radio" name="r2" id="flexRadioDefault1" value="Olympiad">
+                <label class="male" for="flexRadioDefault1">
+                  Registering for olympiad
+                </label>
+              </div>
+              <div class="form-check col-lg-4 l-i pb-2">
+                <input class="form-check-input" type="radio" name="r2" id="flexRadioDefault2" value="Class">
+                <label class="male" for="flexRadioDefault2">
+                  Registering for classes
+                </label>
+              </div>
+              <div class="form-check col-lg-4 l-i pb-2">
+                <input class="form-check-input" type="radio" name="r2" id="flexRadioDefault1" value="Both" checked>
+                <label class="male" for="flexRadioDefault1">
+                  Registering for both
+                </label>
+              </div>
+
+
+<!--
+            <input type="radio" class="male" name="r2" value="Olympiad"><label class="male">Registering for olympiad</label>
+          </div>
+          <div class="form-group col-sm-4">
+            <input type="radio" class="male" name="r2" value="Class"><label class="male">Registering for class</label>
+          </div>
+          <div class="form-group col-sm-4">
+            <input type="radio"class="male" name="r2" value="Both"><label class="male">Registering for both</label>
+          </div> -->
+          </div>
+          <div class="personal">
+          <h3 class=" heading">Personal Details</h3>
+						<div class="row">
+							<div class=" form-group pb-2">
+								<input type="text"name="name" placeholder="Full Name*" class="form-control" required="true">
+							</div>
+						</div>
+						<div class="form-group pb-2">
+							<input type="text" name="address" placeholder="Address*" class="form-control" required="true" style="width: 100%;">
+						</div>
+						<div class="row">
+							<div class="col-sm-6 form-group pb-2">
+								<input type="text"name="city" placeholder="City*"class="form-control" required="true">
+							</div>
+							<div class="col-sm-6 form-group pb-2">
+								<input type="text"name="state" placeholder="State*" class="form-control" required="true">
+							</div>
+							<div class="col-sm-6 form-group pb-2">
+								<input type="text"name="country" placeholder="Country*" class="form-control"required="true">
+							</div>
+              <div class="col-sm-6 form-group pb-2">
+								<input type="text"name="pin" placeholder="Pin Code*" class="form-control"required="true">
+							</div>
+						</div>
+					<div class="row">
+            <div class="col-sm-6 form-group pb-2">
+						<input type="text"name="phone" placeholder="Phone Number*" class="form-control"required="true">
+          </div>
+					<div class="col-sm-6 form-group pb-2">
+						<input type="text"name="email" placeholder="Email Address*" class="form-control"required="true">
+					</div>
+        </div>
+        <div class="row">
+          <div class="form-group col-sm-6 pb-2">
+            <div class="w-1 form-control d-lg-flex justify-content-between">
+            <label for="">Gender*</label>
+
+            <div class="form-check col-sm-3">
+              <input class="form-check-input male" type="radio" name="r1" id="flexRadioDefault1" value="Male">
+              <label class="male" for="flexRadioDefault1">
+                Male
+              </label>
+            </div>
+            <div class="form-check col-sm-3">
+              <input class="form-check-input male" type="radio" name="r1" id="flexRadioDefault1" value="Female">
+              <label class="male" for="flexRadioDefault1">
+                Female
+              </label>
+            </div>
+          </div>
+          <!-- <div class="row">
+          <div class="form-group col-sm-3">
+          <input type="radio" class="male" name="r1" value="Male"><label class="male">Male</label>
+        </div>
+        <div class="form-group col-sm-3">
+        <input type="radio" class="male" name="r1" value="Female"><label class="male">Female</label>
+      </div> -->
+      <!-- </div> -->
+      </div>
+        <div class="form-group pb-2 col-sm-6">
+        <input type="text"name="date"class="form-control w-1" style="border:transparent solid 1px;" placeholder="Date of Birth*" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}"required="true">
+      </div>
+      </div>
+    </div>
+    </div>
+    <div class="education">
+      <div class="row">
+      <label><h3 class="heading">Educational Qualification</h3></label>
+      <div class="form-group">
+        <select name="education" id="select" class="w-1" style="border:transparent solid 1px;" onchange="onselected();">
+         <option value="">Select Educational Institute</option>
+         <option value="school">School</option>
+         <option value="college">College</option>
+       </select>
+      </div>
+    </div>
+    <div class="row" id="school">
+      <div class="col-sm-6 form-group">
+      <input type="text" name="class" placeholder="Class*" class="form-control">
+    </div>
+       <div class="col-sm-6 form-group">
+      <input type="text" name="school"placeholder="School Name*" class="form-control">
+    </div>
+  </div>
+  <div class="row" id="college">
+    <div class="col-sm-6 form-group">
+    <input type="text"name="year" placeholder="Year*" class="form-control" >
+  </div>
+  <div class="col-sm-6 form-group">
+    <input type="text" name="college" placeholder="College Name*" class="form-control">
+  </div>
+</div>
+</div>
+<div class="identity">
+<div class="row">
+  <div class=" form-group">
+    <h3>Identity Proof Document</h3>
+    <label for="">Upload ID(Aadhar Card/Passport/Driving Licence)*</label>
+    <input type="file" name="myfile1"placeholder="Enter Full Name Here.." class="form-control"required="true">
+  </div>
+</div>
+</div>
+<div class="paymentdetails">
+<div class="row">
+  <div class=" form-group">
+    <h3>Payment Details</h3>
+    <label for="">Upload Receipt*</label>
+    <input type="file"name="myfile2" placeholder="Enter Full Name Here.." class="form-control"required="true">
+  </div>
+  </div>
+  </div>
+<div class="form-group button">
+					<button type="submit"class="btn btn-lg btn-danger mt-4">Submit</button>
+					</div>
+				</form>
+      </div>
+				</div>
+	</div>
+	</div>
+</div>
+
+    </section><!-- End Breadcrumbs -->
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <%- include('partials/footer.ejs') -%>
+  <script defer src="js/index.js"></script>
+
+</body>
+
+</html>

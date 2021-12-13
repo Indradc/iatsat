@@ -1,0 +1,82 @@
+:root{
+  --col-acc: rgb(39, 92, 197);
+    --col-txt: #222;
+    --col-head: #111;
+    --color-txt-light : #eaeaea;
+    --col-acc-light: rgb(68, 121, 228);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    color: #111;
+  }
+  
+  section{
+    padding-bottom: 60px;
+  }
+
+
+  ul{
+    list-style: none;
+  }
+  ul li{
+    color: var(--col-txt);
+
+  }
+
+  .about .back-i{
+    background: url("../img/about.jpg") no-repeat center center;
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    height: auto;
+    background-size: cover ;
+    align-items: flex-end;
+    margin-bottom: 30px;
+  }
+
+  .about .back-i .banner{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-end;
+    height: 100%;
+    padding-left: 60px;
+    position: absolute;
+    margin-right: auto;
+    /* width: 50%; */
+    top: 0;
+    left: 0;
+  }
+
+  .three-sec img{
+    max-width: 500px;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .about .back-i .banner{
+      padding-left: 20px;
+    }
+    h2 {
+      font-size: 28px !important;
+    }
+    h1 {
+      font-size: 36px !important;
+    }
+    h3{
+      font-size: 24px !important;
+    }
+    p{
+      font-size: 14px !important;
+    }
+  }
+
+  @media (max-width:575px)
+  {
+    .dots{
+      display: none;
+    }
+    .points{
+      display: block;
+    }
+  }

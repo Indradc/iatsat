@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/regist.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <%  found.forEach(function(item){ %>
+      <div class="school receipt">
+      <form  action="/sendmailschool" method="post">
+      <table cellspacing=20>
+        <tr>
+          <td><h3>Institute Name</h3></td>
+          <td><h4><%=item.institute%></h4></td>
+        </tr>
+        <tr>
+        <tr>
+          <td><h3>Contact Person Name</h3></td>
+          <td><h4><%=item.name%></h4></td>
+        </tr>
+        <tr>
+          <td><h3>Designation</h3></td>
+          <td><h4><%=item.designation%></h4></td>
+        </tr>
+        <tr>
+          <td><h3>Phone Number</h3></td>
+          <td><h4><%=item.phone%></h4></td>
+        </tr>
+        <tr>
+          <td><h3>Email ID</h3></td>
+          <td><h4><%=item.email%></h4></td>
+        </tr>
+        <input type="hidden" name="email" value="<%=item.email%>">
+        <input type="hidden" name="phone" value="<%=item.phone%>">
+        <tr>
+          <td><h3>Details of Student</h3></td>
+          <td><h4><a href="/<%=item._id%>/school">Click here to view student details</a></h4></td>
+        </tr>
+        <tr>
+          <td><h3>Payment Receipt</h3></td>
+          <td><h4><a href="/school/<%=item._id%>">Click here to view payment receipt</a></h4></td>
+        </tr>
+      </table>
+      <div class="form-group button">
+                <button type="submit" class="btn btn-lg btn-info">Send Confirmation mail</button>
+                </div>
+      </form>
+    </div>
+    <%  });  %>
+  </body>
+</html>

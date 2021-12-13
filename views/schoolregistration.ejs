@@ -1,0 +1,118 @@
+<%- include('partials/default.ejs') -%>
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+
+  <!-- ======= Header ======= -->
+  <body>
+  <%- include('partials/header.ejs') -%>
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+        <div class="well regist">
+
+  </div>
+  <div class="container">
+    <h1 class="heading display-5">Institute Registration Form</h1>
+	<div class="col-lg-12 well">
+	<div class="row">
+    <div class="row">
+      <div class="button form-group">
+        <button type="button" class="btn btn-large btn-dark mb-3" name="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Check Bank Details</button>
+      </div>
+    </div>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Bank Details</h5>
+                                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div><b class="h6">Bank Name: </b> ICICI Bank</div>
+                                    <div><b class="h6">Account Name: </b> ONE ALPHABET EDUCATIONAL FOUNDATION</div>
+                                    <div><b class="h6">ACCOUNT NUMBER: </b>016405008465</div>
+                                    <div><b class="h6">IFSC CODE: </b> ICIC0000164</div>
+                                    <hr>
+                                    <div><b class="h6">NOTE: </b>Make the payment to respective bank and upload the payment reciept</b></div>
+                                  <div><b class="h6">Paytm Number: </b>7838397713</div>
+                                  <div><b class="h6">NOTE: </b>Payment can be done through paytm also.After payment,take the screenshot and upload it as payment receipt</b></div>
+                                 </div>
+                                  <div class="modal-footer">
+                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+				<form action="/addschool" method="POST" enctype="multipart/form-data">
+					<div class="col-sm-12">
+            <div class="personal">
+              <h3 class="heading">School/Institute Details</h3>
+						<div class="row">
+							<div class="form-group pb-2">
+								<input type="text" name="school"placeholder="School/Institute Name*" class="form-control" required="true">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 form-group pb-2">
+								<input type="text"name="name" placeholder="Contact Person Name*" class="form-control" required="true">
+							</div>
+							<div class="col-sm-6 form-group pb-2">
+								<input type="text" name="designation" placeholder="Designation*" class="form-control" required="true">
+							</div>
+						</div>
+					<div class="row">
+            <div class="col-sm-6 form-group pb-2">
+						<input type="text"name="phone" placeholder="Phone Number*" class="form-control" required="true">
+          </div>
+					<div class="col-sm-6 form-group pb-2">
+						<input type="text"name="email" placeholder="Email Address*" class="form-control" required="true">
+					</div>
+        </div>
+        </div>
+<div class="identity">
+<div class="row">
+  <div class=" form-group">
+    <h3 class="heading">Details of Student Registered</h3>
+    <label>Upload Excel File*</label>
+    <input type="file" id="myfile1" name="myfile1" value="" placeholder="Enter Full Name Here.." class="form-control mt-2" required="true">
+  </div>
+</div>
+</div>
+<div class="paymentdetails">
+<div class="row">
+  <div class=" form-group">
+    <h3 class="heading">Payment Details</h3>
+    <label>Upload Receipt*</label>
+    <input type="file" name="myfile2" placeholder="Enter Full Name Here.." class="form-control mt-2" required="true">
+  </div>
+</div>
+</div>
+<div class="form-group button">
+					<button type="submit" class="btn btn-lg btn-danger mt-4">Submit</button>
+					</div>
+				</form>
+      </div>
+				</div>
+	</div>
+</div>
+
+    </section><!-- End Breadcrumbs -->
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <%- include('partials/footer.ejs') -%>
+
+</body>
+
+</html>
